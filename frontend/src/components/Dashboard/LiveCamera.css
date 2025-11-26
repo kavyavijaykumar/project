@@ -1,0 +1,286 @@
+.live-camera-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.live-camera-container h2 {
+  text-align: center;
+  color: var(--accent-green, #00ff88);
+  margin-bottom: 30px;
+}
+
+/* IP Webcam Setup */
+.ip-webcam-setup {
+  background: var(--card-bg, #1e1e1e);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 2px solid var(--border-color, #333);
+}
+
+.setup-instructions {
+  margin-bottom: 20px;
+}
+
+.setup-instructions h3 {
+  color: var(--accent-green, #00ff88);
+  margin-bottom: 15px;
+}
+
+.setup-instructions ol {
+  padding-left: 25px;
+  line-height: 1.8;
+  color: var(--text-color, #e0e0e0);
+}
+
+.setup-instructions li {
+  margin-bottom: 8px;
+}
+
+/* IP Input Section */
+.ip-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ip-input-section label {
+  font-weight: bold;
+  color: var(--text-color, #e0e0e0);
+}
+
+.ip-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid var(--border-color, #444);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--bg-dark, #0a0a0a);
+  color: var(--text-color, #fff);
+  transition: border-color 0.3s;
+}
+
+.ip-input:focus {
+  outline: none;
+  border-color: var(--accent-green, #00ff88);
+}
+
+.ip-hint {
+  color: var(--text-muted, #888);
+  font-size: 13px;
+}
+
+/* Connection Status */
+.connection-status {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: var(--card-bg, #1e1e1e);
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Camera Display */
+.camera-display {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  min-height: 400px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
+}
+
+.live-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+  border: 3px solid var(--accent-green, #00ff88);
+  border-radius: 12px;
+}
+
+.detection-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Placeholder */
+.camera-placeholder {
+  background: #1a1a1a;
+  border: 2px dashed #444;
+  border-radius: 12px;
+  padding: 80px 40px;
+  text-align: center;
+  color: #888;
+  width: 100%;
+  max-width: 640px;
+}
+
+.placeholder-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.camera-placeholder p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Detection Stats */
+.detection-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--card-bg, #1e1e1e);
+  border-radius: 10px;
+  border: 1px solid var(--border-color, #333);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted, #888);
+  text-transform: uppercase;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color, #fff);
+}
+
+.stat-value.active {
+  color: var(--accent-green, #00ff88);
+}
+
+/* Detected Objects */
+.detected-objects {
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--card-bg, #1e1e1e);
+  border-radius: 10px;
+  border: 1px solid var(--border-color, #333);
+}
+
+.detected-objects h3 {
+  margin-bottom: 15px;
+  color: var(--accent-green, #00ff88);
+}
+
+.labels-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.label-badge {
+  padding: 8px 16px;
+  background: var(--accent-green, #00ff88);
+  color: #000;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Control Buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: var(--accent-green, #00ff88);
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #00cc6a;
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.btn-warning {
+  background: #ffc107;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background: #e0a800;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .live-camera-container {
+    padding: 15px;
+  }
+
+  .ip-webcam-setup {
+    padding: 20px;
+  }
+
+  .detection-stats {
+    gap: 20px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

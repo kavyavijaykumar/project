@@ -1,0 +1,30 @@
+:root {
+  --bg-dark: #0d1117;
+  --bg-gradient: radial-gradient(circle at top left, #111a22, #0d1117);
+  --accent-green: #8aff6c;
+  --accent-cyan: #00f5ff;
+  --text-light: #e6edf3;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+button {
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
